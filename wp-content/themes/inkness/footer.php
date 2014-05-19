@@ -15,7 +15,7 @@
 	<?php if ( of_get_option('credit1', true) == 0 ) { ?>
 		<div class="site-info col-md-4">
 			<?php do_action( 'inkness_credits' ); ?>
-			<?php printf( __( 'Inkness Theme by %1$s.', 'inkness' ), '<a href="http://inkhive.com/product/inkness" rel="designer">InkHive</a>' ); ?>
+			<?php printf( __( 'Inkness Theme by %1$s.', 'inkness' ), '<a href="http://inkhive.com/" rel="designer">InkHive</a>' ); ?>
 		</div><!-- .site-info -->
 	<?php } ?>	
 		<div id="footertext" class="col-md-7">
@@ -28,9 +28,6 @@
 	
 </div><!-- #page -->
 
-<?php		
-	if ( (function_exists( 'of_get_option' ) && (of_get_option('footercode1', true) != 1) ) ) {
-			 	echo of_get_option('footercode1', true); } ?>
 <?php wp_footer(); ?>
 </body>
 </html>

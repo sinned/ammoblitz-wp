@@ -7,7 +7,7 @@
  */
 
 function inkness_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'inkness_custom_header_args', array(
+	add_theme_support( 'custom-header', array(
 		'default-image'          => '',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1920,
@@ -16,7 +16,7 @@ function inkness_custom_header_setup() {
 		'wp-head-callback'       => 'inkness_header_style',
 		'admin-head-callback'    => 'inkness_admin_header_style',
 		'admin-preview-callback' => 'inkness_admin_header_image',
-	) ) );
+	) );
 }
 add_action( 'after_setup_theme', 'inkness_custom_header_setup' );
 
